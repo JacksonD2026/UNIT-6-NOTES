@@ -28,18 +28,33 @@ public class Main {
       // INITIALIZER LIST
       int[] luckiestNumbers = {13,13,10,9,5,20,37,7};
       double[] currentCash = {1.0 , 5.25, 15.0, 21.0};
-      String[] bestClass = { "Maia", "Alex","Zoie", "Paige", "Natalie", "Bryce", "Finny", "Jackson"};
+
       
       //How to access array elements
       // arrayname[index] --> gets item at that position
-      System.out.println(luckiestNumbers[5]);
-      System.out.println(bestClass[5]);
+      System.out.println(luckiestNumbers[0]);
+      System.out.println(currentCash[3]);
 
       // HOW TO MODIFY AN ARRAY ELEMENT
       // arrayName[index] = newValue
       faveAnimals[0] = "dolphin";
       faveAnimals[1] = "dog";
+      // NOTE that the other 6 indies hold NULL
+      System.out.println(faveAnimals[2]);
 
+      String[] bestClass = { "Maia", "Alex","Zoie", "Paige", "Natalie", "Bryce", "Finny", "Jackson"};
+     // LENGTH IS AN ARRAY ATTRIBUTE/PROPERTY
+     int numStudents = bestClass.length;
+     System.out.println(numStudents); // 8
+     int lastStudentIndex = bestClass.length - 1;
+     System.out.println(bestClass[lastStudentIndex]);
+
+     // Parallel array to hold info associated with another array
+     String[] faveFoods = {"Pasta", "", "Sushi", "Ceaser Salad" , "Sushi" , "Burritos" , "I don't know" , "Lasagna"};
+
+     //with parallel arrays, order matters; so we can use the same index for multiple liss
+
+     System.out.println( bestClass[lastStudentIndex] + "'s favorite food is " + faveFoods[faveFoods.length - 1] );
 
 
 
