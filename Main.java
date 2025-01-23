@@ -54,9 +54,31 @@ public class Main {
 
      //with parallel arrays, order matters; so we can use the same index for multiple liss
 
-     System.out.println( bestClass[lastStudentIndex] + "'s favorite food is " + faveFoods[faveFoods.length - 1] );
+    
+
+ System.out.println( bestClass[lastStudentIndex] + "'s favorite food is " + faveFoods[faveFoods.length - 1] );
 
 
+ // STANDARD FOR-LOOP TO TRAVERSE ARRAYS
+ // Example: start at first index, stop at final index, CHANGE by 1
+// WATCH out for bounds with the stop condition
+// Can use i < array.length or i<= (array.length);
+ for(int i = 0; i < bestClass.length; i++) {
+   System.out.println(bestClass[i] + "'s favorite food is " + faveFoods[i]);
+ }
+
+ // with standard for loops, you have flexibility over the order and way you traverse through the array
+ // Start at final index, stop at first index
+
+ int[] countdown = {1,2,3,4,5,6,7,8,9,10};
+ for (int i = countdown.length - 1; i >= 0; i-=2) {
+ System.out.println(countdown[i]);
+
+ if (i == 0) {
+  System.out.println("Happy new year!");
+}
+
+ }
 
 
    }
