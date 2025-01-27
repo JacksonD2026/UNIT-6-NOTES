@@ -80,6 +80,34 @@ public class Main {
 
  }
 
+ // STANDARD FOR LOOPS allow you to modify values
+ // because during iteration, we are keeping track of index
+ // Example: fill in values for empty array
+ int[] tens = new int[10];
+ for (int i = 0; i < tens.length; i++) {
+  tens[i] = i * 10;
+  System.out.print(tens[i] + ", ");
+ }
+
+ System.out.println("\n");
+
+ for (int i = 0; i < bestClass.length; i++) {
+  bestClass[i] = bestClass [i] + "yay";  
+  System.out.print(bestClass[i] + ", ");
+ }
+
+ System.out.println("\n");
+
+ // ENHANCED FOR LOOPS ("For-Each")
+ // Shortcut to iterate throguh EACH item
+ // in a collection (from start --> end)
+ // for (type variable : arrayname)
+ for(String student : bestClass) {
+
+  System.out.print(student + ", ");
+ }
+
+ // CANNOT modify values when using for-each because we dont keep track of index
 
    }
 }
